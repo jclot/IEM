@@ -1,21 +1,21 @@
 import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import HomeScreen from '../screens/HomeScreen.js';
+import CameraScreen from '../screens/Facebook.js';
 
 
 const Stack = createStackNavigator();
 
-function HomeStackScreen() {
+function CameraStackScreen() {
   return (
     <Stack.Navigator>
       <Stack.Screen 
-      name="Home" 
-      component={HomeScreen} 
+      name="Camera" 
+      component={CameraScreen} 
       options={{
 
-        headerTintColor: 'salmon',
-        headerTitle: 'Home'
+        headerTintColor: 'black',
+        headerTitle: 'IEM Bilingual School (Facebook)'
       
       }}
       />
@@ -23,4 +23,4 @@ function HomeStackScreen() {
   );
 }
 
-export default HomeStackScreen;
+export default CameraStackScreen;

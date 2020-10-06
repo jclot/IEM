@@ -2,10 +2,7 @@ import * as React from 'react';
 
 import { createStackNavigator } from '@react-navigation/stack';
 
-import LibraryScreen from '../screens/LibraryScreen';
-
-
-
+import LibraryScreen from '../screens/Wootit';
 
 const Stack = createStackNavigator();
 
@@ -16,11 +13,13 @@ function LibraryStackScreen() {
       name="Library" 
       component={LibraryScreen} 
       options={{
-        headerTintColor: 'salmon',
-        headerTitle: 'Library',
+        headerTintColor: 'black',
+        headerTitle: 'Woot it',
       
       }}
+      
       />
+      
     </Stack.Navigator>
   );
 }
