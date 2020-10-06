@@ -3,11 +3,12 @@ import { Text, View, SafeAreaView } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createStackNavigator, HeaderBackground } from "@react-navigation/stack";
+
 
 import CameraStackScreen from './FacebookStack.js'
 import HomeStackScreen from './WebsiteStack.js';
 import LibraryStackScreen from './WootitStack.js';
+import HowtouseStack from './HowtouseStack.js';
 
 import Ionicons from '../../node_modules/@expo/vector-icons/Ionicons.js';
 
@@ -28,15 +29,19 @@ function Route() {
             if (route.name === 'Website') {
               iconName = focused
                 ? 'ios-information-circle'
-                : 'ios-information-circle-outline';
+                : 'ios-information-circle';
             } else if (route.name === 'Facebook page') {
               iconName = focused 
-                ? 'ios-camera' 
-                : 'ios-camera';
+                ? 'logo-facebook' 
+                : 'logo-facebook';
             } else if (route.name === 'Woot it') {
               iconName = focused 
-                ? 'ios-albums' 
-                : 'ios-albums';
+                ? 'ios-school' 
+                : 'ios-school';
+            } else if(route.name === 'How to use') {
+              iconName = focused 
+                ? 'ios-help-circle' 
+                : 'ios-help-circle';
             }
 
             // You can return any component that you like here!
@@ -48,13 +53,10 @@ function Route() {
           inactiveTintColor: 'gray',
         }}
       >
-        <Tab.Screen 
-        name="Website" 
-        component={HomeStackScreen} 
-
-        />
+        <Tab.Screen name="Website" component={HomeStackScreen} />
         <Tab.Screen name="Facebook page" component={CameraStackScreen} />
         <Tab.Screen name="Woot it" component={LibraryStackScreen} />
+        <Tab.Screen name="How to use" component={HowtouseStack} />
       </Tab.Navigator>
     </NavigationContainer>
   

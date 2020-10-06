@@ -5,6 +5,9 @@
     "name": "napsmobile",
     "slug": "napsmobile",
     "version": "1.0.0",
+    "splash": {
+      "image": "./src/assets/IEMLogo.png"
+    },
     "assetBundlePatterns": [
       "**/*"
     ]
