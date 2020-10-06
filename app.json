@@ -2,14 +2,19 @@
   "name": "napsmobile",
   "displayName": "napsmobile",
   "expo": {
-    "name": "napsmobile",
-    "slug": "napsmobile",
+    "name": "IEM",
+    "slug": "iem",
     "version": "1.0.0",
     "splash": {
       "image": "./src/assets/IEMLogo.png"
     },
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "ios": {
+      "bundleIdentifier": "IEM"
+    },
+    "description": "",
+    "githubUrl": "https://github.com/jclot/IEM"
   }
 }
