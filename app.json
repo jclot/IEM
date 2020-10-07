@@ -15,7 +15,7 @@
     "ios": {
       "bundleIdentifier": "IEM"
     },
-    "description": "",
+    "description": "Esta aplicacion esta hecha para propositos educativos.",
     "githubUrl": "https://github.com/jclot/IEM",
     "android": {
       "package": "com.itzjuli.iem"
