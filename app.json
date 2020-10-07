@@ -15,6 +15,9 @@
       "bundleIdentifier": "IEM"
     },
     "description": "",
-    "githubUrl": "https://github.com/jclot/IEM"
+    "githubUrl": "https://github.com/jclot/IEM",
+    "android": {
+      "package": "com.itzjuli.iem"
+    }
   }
 }
