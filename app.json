@@ -5,6 +5,7 @@
     "name": "IEM",
     "slug": "iem",
     "version": "1.0.0",
+    "icon": "./src/assets/icon.png",
     "splash": {
       "image": "./src/assets/IEMLogo.png"
     },
