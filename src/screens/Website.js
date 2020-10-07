@@ -2,7 +2,7 @@ import * as React from 'react';
 import {  StyleSheet} from 'react-native';
 
 import { WebView } from 'react-native-webview';
-
+import Ionicons from '../../node_modules/@expo/vector-icons/Ionicons.js';
 function HomeScreen({ navigation }) {
   return (
 

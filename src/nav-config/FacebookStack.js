@@ -2,7 +2,7 @@ import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import CameraScreen from '../screens/Facebook.js';
-
+import Ionicons from '../../node_modules/@expo/vector-icons/Ionicons.js';
 
 const Stack = createStackNavigator();
 

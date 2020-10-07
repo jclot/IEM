@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {  StyleSheet, Text, View, ScrollView, TouchableOpacity} from 'react-native';
-
+import Ionicons from '../../node_modules/@expo/vector-icons/Ionicons.js';
 
 function HowtouseScreen({ navigation }) {
   return (

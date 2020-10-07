@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { createStackNavigator } from '@react-navigation/stack';
-
+import Ionicons from '../../node_modules/@expo/vector-icons/Ionicons.js';
 import LibraryScreen from '../screens/Wootit';
 
 const Stack = createStackNavigator();
