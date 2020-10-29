@@ -1,10 +1,12 @@
 {
   "name": "UMConstantsInterface",
-  "version": "5.2.1",
+  "version": "5.3.0",
   "summary": "An interface for constants modules.",
   "description": "An interface for constants modules.",
   "license": "MIT",
-  "authors": "650 Industries, Inc.",
+  "authors": {
+    "name": "650 Industries, Inc."
+  },
   "homepage": "https://github.com/expo/expo/tree/master/packages/unimodules-constants-interface",
   "platforms": {
     "ios": "10.0"

@@ -3,6 +3,9 @@ import {  StyleSheet, Text, View, ScrollView, TouchableOpacity} from 'react-nati
 import Ionicons from '../../node_modules/@expo/vector-icons/Ionicons.js';
 
 function HowtouseScreen({ navigation }) {
+
+    let WebViewRef;
+
   return (
 
 <ScrollView>
