@@ -24,20 +24,20 @@ function CameraScreen({ navigation }) {
   <View style={styles.icons}>
       
       <TouchableOpacity onPress={() => { WebViewRef && WebViewRef.reload(); }} style={styles.icons_reload}>
-      <Ionicons name="ios-refresh" size={26} color="black" />
+      <Ionicons name="ios-refresh" size={28} color="black" />
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.icons_safari} onPress={() => Linking.openURL('https://www.facebook.com/IEM.Bilingual.School/')}>
-      <FontAwesome name="safari" size={26} color="black" />
+      <FontAwesome name="safari" size={28} color="black" />
       </TouchableOpacity>
 
       
       <TouchableOpacity onPress={() => { WebViewRef && WebViewRef.goBack(); }} style={styles.icons_back}>
-      <Ionicons name="ios-arrow-back" size={26} color="black" />
+      <Ionicons name="ios-arrow-dropleft" size={32} color="black" />
       </TouchableOpacity>
 
       <TouchableOpacity onPress={() => { WebViewRef && WebViewRef.goForward(); }} style={styles.icons_forward}>
-      <Ionicons name="ios-arrow-forward" size={26} color="black" />
+      <Ionicons name="ios-arrow-dropright" size={32} color="black" />
       </TouchableOpacity>
       
  
@@ -63,8 +63,8 @@ const styles = StyleSheet.create({
   icons_back: {
   
     alignSelf: 'flex-end',
-    paddingRight: 30,
-    marginLeft: 130
+    marginRight: 20,
+    marginLeft: 110
   
   
   
