@@ -1,8 +1,8 @@
 import * as React from 'react';
-import {  StyleSheet, View, TouchableOpacity} from 'react-native';
+import {  StyleSheet, View, TouchableOpacity, Linking} from 'react-native';
 import Ionicons from '../../node_modules/@expo/vector-icons/Ionicons.js';
+import FontAwesome from '../../node_modules/@expo/vector-icons/FontAwesome.js';
 import { WebView } from 'react-native-webview';
-
 function LibraryScreen({ navigation }) {
 
   let WebViewRef;
@@ -25,6 +25,10 @@ function LibraryScreen({ navigation }) {
       <Ionicons name="ios-refresh" size={26} color="black" />
       </TouchableOpacity>
 
+      <TouchableOpacity style={styles.icons_safari} onPress={() => Linking.openURL('https://www.wootit.cr/iem/')}>
+      <FontAwesome name="safari" size={26} color="black" />
+      </TouchableOpacity>
+
       <TouchableOpacity onPress={() => { WebViewRef && WebViewRef.goBack(); }} style={styles.icons_back}>
       <Ionicons name="ios-arrow-back" size={26} color="black" />
       </TouchableOpacity>
@@ -45,7 +49,7 @@ const styles = StyleSheet.create({
   icons_reload: {
 
     alignSelf: 'flex-start',
-    marginRight: 300
+    
     
     
   
@@ -56,6 +60,8 @@ const styles = StyleSheet.create({
   
     alignSelf: 'flex-end',
     paddingRight: 30,
+    marginLeft: 130
+  
   
   
   },
@@ -75,7 +81,15 @@ const styles = StyleSheet.create({
     
   
   
-  }
+  },
+
+  icons_safari: {
+
+   marginLeft: 150
+    
+
+  },
+
 
 })
 

@@ -56,7 +56,7 @@ function Route() {
         <Tab.Screen name="Website" component={HomeStackScreen} />
         <Tab.Screen name="Facebook page" component={CameraStackScreen} />
         <Tab.Screen name="Woot it" component={LibraryStackScreen} />
-        <Tab.Screen name="How to use" component={HowtouseStack} />
+        {/* <Tab.Screen name="How to use" component={HowtouseStack} /> */}
       </Tab.Navigator>
     </NavigationContainer>
   

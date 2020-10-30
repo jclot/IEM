@@ -1,8 +1,8 @@
 import * as React from 'react';
-import {  StyleSheet, Button, View, TouchableOpacity} from 'react-native';
-
-import { WebView } from 'react-native-webview';
+import {  StyleSheet, View, TouchableOpacity, Linking} from 'react-native';
 import Ionicons from '../../node_modules/@expo/vector-icons/Ionicons.js';
+import FontAwesome from '../../node_modules/@expo/vector-icons/FontAwesome.js';
+import { WebView } from 'react-native-webview';
 
 function HomeScreen({ navigation }) {
 
@@ -23,6 +23,10 @@ function HomeScreen({ navigation }) {
       <Ionicons name="ios-refresh" size={26} color="black" />
       </TouchableOpacity>
 
+      <TouchableOpacity style={styles.icons_safari} onPress={() => Linking.openURL('http://www.iem.ed.cr/')}>
+      <FontAwesome name="safari" size={26} color="black" />
+      </TouchableOpacity>
+
       <TouchableOpacity onPress={() => { WebViewRef && WebViewRef.goBack(); }} style={styles.icons_back}>
       <Ionicons name="ios-arrow-back" size={26} color="black" />
       </TouchableOpacity>
@@ -39,40 +43,50 @@ function HomeScreen({ navigation }) {
 }
 const styles = StyleSheet.create({
 
-icons_reload: {
+  icons_reload: {
 
-  alignSelf: 'flex-start',
-  marginRight: 300
+    alignSelf: 'flex-start',
+    
+    
+    
   
   
-
-
-},
-
-icons_back: {
-
-  alignSelf: 'flex-end',
-  paddingRight: 30,
-
-
-},
-
-icons_forward: {
-
-  alignSelf: 'flex-end',
- 
-},
-
-icons: {
-
-  paddingLeft: 10,
- 
-  margin: 10,
-  flexDirection: 'row',
+  },
   
+  icons_back: {
+  
+    alignSelf: 'flex-end',
+    paddingRight: 30,
+    marginLeft: 130
+  
+  
+  
+  },
+  
+  icons_forward: {
+  
+    alignSelf: 'flex-end',
+   
+  },
+  
+  icons: {
+  
+    paddingLeft: 10,
+   
+    margin: 10,
+    flexDirection: 'row',
+    
+  
+  
+  },
 
+  icons_safari: {
 
-}
+   marginLeft: 150
+    
+
+  },
+
 
 
 
