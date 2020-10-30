@@ -33,11 +33,11 @@ function CameraScreen({ navigation }) {
 
       
       <TouchableOpacity onPress={() => { WebViewRef && WebViewRef.goBack(); }} style={styles.icons_back}>
-      <Ionicons name="ios-arrow-dropleft" size={32} color="black" />
+      <Ionicons name="ios-arrow-back" size={32} color="black" />
       </TouchableOpacity>
 
       <TouchableOpacity onPress={() => { WebViewRef && WebViewRef.goForward(); }} style={styles.icons_forward}>
-      <Ionicons name="ios-arrow-dropright" size={32} color="black" />
+      <Ionicons name="ios-arrow-forward" size={32} color="black" />
       </TouchableOpacity>
       
  
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   icons_back: {
   
     alignSelf: 'flex-end',
-    marginRight: 20,
+    marginRight: 40,
     marginLeft: 110
   
   
